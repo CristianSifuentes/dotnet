@@ -1,0 +1,21 @@
+﻿@page "/"
+@using System.Math
+
+<h3>Relativity - Time Dilation</h3>
+
+<p>Enter the speed of the moving object relative to the speed of light (c):</p>
+
+<input type="number" @bind="Velocity" step="0.01" min="0" max="1" /> c
+<p>Proper Time: <input type="number" @bind="ProperTime" step="1" min="1" /> seconds</p>
+
+<h4>Results</h4>
+<p>Time Dilation Factor: @TimeDilationFactor</p>
+<p>Observed Time: @ObservedTime seconds</p>
+
+@code {
+    private double Velocity { get; set; } = 0.9;
+    private double ProperTime { get; set; } = 10;
+
+    private double TimeDilationFactor => 1 / Sqrt(1 - Velocity * Velocity);
+    private double ObservedTime => ProperTime * TimeDilationFactor;
+}

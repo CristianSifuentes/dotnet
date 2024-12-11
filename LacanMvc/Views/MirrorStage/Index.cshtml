@@ -1,0 +1,33 @@
+@model LacanMvc.Models.MirrorStageModel
+@{
+    ViewData["Title"] = "The Mirror Stage";
+}
+
+<h1>The Mirror Stage</h1>
+<p>Explore the Lacanian concept of the Mirror Stage by reflecting on your "I."</p>
+
+<div>
+    <form asp-action="Reflect" method="post">
+        <div>
+            <label for="IdealI">Ideal I:</label>
+            <input asp-for="IdealI" class="form-control" />
+        </div>
+        <div>
+            <label for="ImaginaryI">Imaginary I:</label>
+            <input asp-for="ImaginaryI" class="form-control" />
+        </div>
+        <div>
+            <label for="SymbolicI">Symbolic I:</label>
+            <input asp-for="SymbolicI" class="form-control" />
+        </div>
+        <button type="submit" class="btn btn-primary mt-3">Reflect</button>
+    </form>
+</div>
+
+@if (Model.ReflectionResult != null)
+{
+    <div class="mt-4">
+        <h3>Your Reflection:</h3>
+        <p>@Model.ReflectionResult</p>
+    </div>
+}
