@@ -120,14 +120,19 @@ $ dotnet run
 ---
 
 ## **Common `dotnet new` Templates**
-| Template | Command |
-|----------|---------|
-| Console App | `dotnet new console` |
-| Web API | `dotnet new webapi` |
-| Class Library | `dotnet new classlib` |
-| MVC | `dotnet new mvc` |
-| Blazor Server | `dotnet new blazorserver` |
-| Blazor WebAssembly | `dotnet new blazorwasm` |
+
+| **Template** | **Command** | **Description** |
+| --- | --- | --- |
+| **console** | dotnet new console | Create a console application.  |
+| **classlib** | dotnet new classlib |  Create a class library. |
+| **web** | dotnet new web | Creates an empty ASP.NET Core web application. |
+| **webapi** | dotnet new webapi |   Create a web API with ASP.NET Core. |
+| **mvc** | dotnet new mvc |   Create an ASP.NET Core application using the MVC pattern. |
+| **blazorserver** |  dotnet new blazorserver |  Create a Blazor Server application. |
+| **blazorwasm** | dotnet new blazorwasm |   Create a Blazor WebAssembly application.|
+| **xunit** | dotnet new xunit |   Create a unit testing project with xUnit. |
+| **mstest** | dotnet new mstest |   Create a unit testing project with MSTest. |
+| **worker** | dotnet new worker |   Creates a background worker service. |
 
 ---
 
