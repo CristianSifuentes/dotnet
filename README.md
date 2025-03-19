@@ -2,34 +2,60 @@
 
 ## **Table of Contents**
 1. [Introduction to .NET CLI](#introduction-to-net-cli)
-2. [Main Features of .NET CLI](#main-features-of-net-cli)
-3. [Main `dotnet` Commands](#main-dotnet-commands)
+2. [Traditional .NET Development](#traditional-net-development)
+3. [The Evolution .NET CLI](#the-evolution-net-cli)
+4. [Main Features of .NET CLI](#main-features-of-net-cli)
+5. [Main `dotnet` Commands](#main-dotnet-commands)
    - [1. Project and Solution Initialization](#1-project-and-solution-initialization)
    - [2. Compilation and Execution](#2-compilation-and-execution)
    - [3. Restoration of Dependencies](#3-restoration-of-dependencies)
    - [4. Package Management](#4-package-management)
    - [5. SDK and Runtime Information](#5-sdk-and-runtime-information)
-4. [Basic Workflow with `dotnet`](#basic-workflow-with-dotnet)
-5. [Integration in CI/CD](#integration-in-cicd)
-6. [Common `dotnet new` Templates](#common-dotnet-new-templates)
-7. [Advantages of the .NET CLI](#advantages-of-the-net-cli)
-8. [Advanced `dotnet` Commands](#advanced-dotnet-commands)
-   - [1. Environment Information](#1-environment-information)
-   - [2. Project and Solution Management](#2-project-and-solution-management)
-   - [3. Dependency Management (NuGet Packages)](#3-dependency-management-nuget-packages)
-   - [4. Publishing and Distribution](#4-publishing-and-distribution)
-   - [5. Testing and Quality](#5-testing-and-quality)
-   - [6. Scripts and Custom Tasks](#6-scripts-and-custom-tasks)
-   - [7. Project Configuration](#7-project-configuration)
-   - [8. `global.json` Configuration](#8-globaljson-configuration)
-   - [9. Diagnostics](#9-diagnostics)
-9. [Using `dotnet new` for Creating Projects](#using-dotnet-new-for-creating-projects)
-10. [Complete Example](#complete-example)
+6. [Basic Workflow with `dotnet`](#basic-workflow-with-dotnet)
+7. [Integration in CI/CD](#integration-in-cicd)
+8. [Common `dotnet new` Templates](#common-dotnet-new-templates)
+9. [Advantages of the .NET CLI](#advantages-of-the-net-cli)
+10. [Advanced `dotnet` Commands](#advanced-dotnet-commands)
+      - [1. Environment Information](#1-environment-information)
+      - [2. Project and Solution Management](#2-project-and-solution-management)
+      - [3. Dependency Management (NuGet Packages)](#3-dependency-management-nuget-packages)
+      - [4. Publishing and Distribution](#4-publishing-and-distribution)
+      - [5. Testing and Quality](#5-testing-and-quality)
+      - [6. Scripts and Custom Tasks](#6-scripts-and-custom-tasks)
+      - [7. Project Configuration](#7-project-configuration)
+      - [8. `global.json` Configuration](#8-globaljson-configuration)
+      - [9. Diagnostics](#9-diagnostics)
+11. [Using `dotnet new` for Creating Projects](#using-dotnet-new-for-creating-projects)
+12. [Complete Example](#complete-example)
 
 ---
 
 ## **Introduction to .NET CLI**
 .NET CLI (`dotnet`) is the **command-line interface for .NET**, enabling **project creation, compilation, execution, package management, testing, and publishing**.
+
+With **.NET Core 2.1**, released in **May 2018**, Microsoft introduced the .NET CLI (Command-Line Interface), offering developers **a lightweight and flexible way to create, build, run, and publish .NET applications** without relying solely on Visual Studio.
+
+---
+
+## Traditional .NET Development
+
+Traditionally, to develop a .NET application, you would:
+✔ Install **Visual Studio IDE**, which includes the **SDKs, build packages, and other dependencies**.  
+✔ Use Visual Studio to **create, build, run, and publish** applications.  
+✔ Rely on **Visual Studio's GUI**, even if you didn't need all of its features.
+
+Visual Studio remains the **best IDE for C# and .NET development**, but **developers often prefer flexibility**.
+
+
+---
+
+## The Evolution .NET CLI
+The **.NET CLI** is a powerful toolchain that allows you to:
+✔ Develop **.NET applications** without Visual Studio.  
+✔ Use **lightweight editors** like **VS Code**.  
+✔ Execute **MSBuild, NuGet CLI, and other tasks** in one unified interface.  
+
+With **.NET CLI**, you're no longer **bound to a single development tool**.
 
 ---
 
